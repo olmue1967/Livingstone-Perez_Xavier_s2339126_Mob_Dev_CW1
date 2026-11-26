@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- MPD XML Starter code 2025-2026 -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:id="@+id/salutation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="20px"
+            android:textSize="20sp"
+            android:text="Roadworks and Incidents Notification App"
+            />
+
+        <TextView
+            android:id="@+id/acknowledgement"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Contains Traffic Scotland data"
+            />
+<!--        <TextView
+            android:id="@+id/rawDataDisplay"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Raw Data is Displayed here"
+            />-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/latestbutton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Latest Incidents" />
+
+            <Button
+                android:id="@+id/nearyoubutton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Incidents Near You" />
+
+            <Button
+                android:id="@+id/mapbutton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Map of Incidents" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/refreshDataButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Refresh Data"
+            android:visibility="gone"
+            />
+
+<!--        <Button
+            android:id="@+id/startButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Press to get data"
+            />-->
+
+        <FrameLayout
+            android:id="@+id/fragholder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+</ScrollView>
