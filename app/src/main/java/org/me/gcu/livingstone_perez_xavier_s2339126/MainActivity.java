@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
      String clientId = "";
      String clientKey = "";
     final String unplannedEventsURL = "https://datex2.trafficscotland.org/rest/2.3/publications/UnplannedEvents/Content.xml";
-    final String currentRoadWorksURL = "https://datex2.trafficscotland.org/rest/2.3/publications/CurrentRoadWorks/Content.xml";   //SLP
+    final String currentRoadWorksURL = "https://datex2.trafficscotland.org/rest/2.3/publications/CurrentRoadWorks/Content.xml";
 
 
     public ArrayList<Situation> getAllSituations() {
@@ -282,7 +282,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
                         }
                     };
 
-                    Timer eventsTimer = new Timer("EventTimer");    // SLP
+                    Timer eventsTimer = new Timer("EventTimer");
                     eventsTimer.schedule(updateEvents, 90000);
                 }
 
@@ -441,7 +441,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
                         {
                             boolean alreadyHaveSituation = false;
 
-                            // check if we have this id and add if we don't // SLP
+                            // check if we have this id and add if we don't
                             for (Situation situation : allSituations) {
                                 if (Objects.equals(situation.getID(), newSituation.getID())) {
 
